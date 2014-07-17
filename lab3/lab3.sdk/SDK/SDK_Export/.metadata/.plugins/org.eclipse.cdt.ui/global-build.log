@@ -1,0 +1,263 @@
+09:50:31 **** Build of project test_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling gpio"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling uartps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+09:51:06 **** Build of configuration Debug for project test ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/ps7_cortexa9_0/lib -o "test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size test.elf  |tee "test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22872	   1096	  22612	  46580	   b5f4	test.elf
+'Finished building: test.elf.size'
+' '
+09:51:58 **** Auto Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+09:54:09 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+09:54:23 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+09:54:26 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+09:55:45 **** Clean-only build of configuration Debug for project test ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/lab3.o ./src/platform.o  ./src/helloworld.d ./src/lab3.d ./src/platform.d  test.elf.size  test.elf
+' '
+09:55:46 **** Auto Build of configuration Debug for project test ****
+make all 
+'Building file: ../src/lab3.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab3.d" -MT"src/lab3.d" -o "src/lab3.o" "../src/lab3.c"
+../src/lab3.c: In function 'main':
+../src/lab3.c:16:28: error: 'XPAR_SW_8BIT_DEVICE_ID' undeclared (first use in this function)
+../src/lab3.c:16:28: note: each undeclared identifier is reported only once for each function it appears in
+../src/lab3.c:19:26: error: 'XPAR_BTNS_5BIT_DEVICE_ID' undeclared (first use in this function)
+make: *** [src/lab3.o] Error 1
+09:55:58 **** Auto Build of configuration Debug for project test ****
+make all 
+'Building file: ../src/lab3.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab3.d" -MT"src/lab3.d" -o "src/lab3.o" "../src/lab3.c"
+'Finished building: ../src/lab3.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/ps7_cortexa9_0/lib -o "test.elf"  ./src/lab3.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size test.elf  |tee "test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26224	   1120	  22628	  49972	   c334	test.elf
+'Finished building: test.elf.size'
+' '
+09:58:46 **** Auto Build of configuration Debug for project test ****
+make all 
+'Building file: ../src/lab3.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab3.d" -MT"src/lab3.d" -o "src/lab3.o" "../src/lab3.c"
+../src/lab3.c: In function 'main':
+../src/lab3.c:12:20: warning: unused variable 'dip_check' [-Wunused-variable]
+'Finished building: ../src/lab3.c'
+' '
+'Building target: test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/ps7_cortexa9_0/lib -o "test.elf"  ./src/lab3.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size test.elf  |tee "test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26160	   1120	  22628	  49908	   c2f4	test.elf
+'Finished building: test.elf.size'
+' '
+09:59:21 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+10:00:07 **** Auto Build of configuration Debug for project test ****
+make all 
+'Building file: ../src/lab3.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab3.d" -MT"src/lab3.d" -o "src/lab3.o" "../src/lab3.c"
+../src/lab3.c: In function 'main':
+../src/lab3.c:12:9: warning: unused variable 'psb_check' [-Wunused-variable]
+../src/lab3.c:11:16: warning: unused variable 'push' [-Wunused-variable]
+'Finished building: ../src/lab3.c'
+' '
+'Building target: test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/ps7_cortexa9_0/lib -o "test.elf"  ./src/lab3.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size test.elf  |tee "test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26156	   1120	  22628	  49904	   c2f0	test.elf
+'Finished building: test.elf.size'
+' '
+10:00:12 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+10:00:56 **** Auto Build of configuration Debug for project test ****
+make all 
+'Building file: ../src/lab3.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab3.d" -MT"src/lab3.d" -o "src/lab3.o" "../src/lab3.c"
+../src/lab3.c: In function 'main':
+../src/lab3.c:11:16: warning: unused variable 'push' [-Wunused-variable]
+'Finished building: ../src/lab3.c'
+' '
+'Building target: test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/ps7_cortexa9_0/lib -o "test.elf"  ./src/lab3.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size test.elf  |tee "test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26224	   1120	  22628	  49972	   c334	test.elf
+'Finished building: test.elf.size'
+' '
+10:01:01 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+10:07:16 **** Auto Build of configuration Debug for project test ****
+make all 
+'Building file: ../src/lab3.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab3.d" -MT"src/lab3.d" -o "src/lab3.o" "../src/lab3.c"
+../src/lab3.c: In function 'main':
+../src/lab3.c:11:16: warning: unused variable 'push' [-Wunused-variable]
+'Finished building: ../src/lab3.c'
+' '
+'Building target: test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/ps7_cortexa9_0/lib -o "test.elf"  ./src/lab3.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size test.elf  |tee "test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26224	   1120	  22628	  49972	   c334	test.elf
+'Finished building: test.elf.size'
+' '
+10:07:19 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+10:07:35 **** Auto Build of configuration Debug for project test ****
+make all 
+'Building file: ../src/lab3.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab3.d" -MT"src/lab3.d" -o "src/lab3.o" "../src/lab3.c"
+../src/lab3.c: In function 'main':
+../src/lab3.c:11:16: warning: unused variable 'push' [-Wunused-variable]
+'Finished building: ../src/lab3.c'
+' '
+'Building target: test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/ps7_cortexa9_0/lib -o "test.elf"  ./src/lab3.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size test.elf  |tee "test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26224	   1120	  22628	  49972	   c334	test.elf
+'Finished building: test.elf.size'
+' '
+10:07:37 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+10:07:50 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+10:08:01 **** Auto Build of configuration Debug for project test ****
+make all 
+'Building file: ../src/lab3.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab3.d" -MT"src/lab3.d" -o "src/lab3.o" "../src/lab3.c"
+../src/lab3.c: In function 'main':
+../src/lab3.c:11:16: warning: unused variable 'push' [-Wunused-variable]
+'Finished building: ../src/lab3.c'
+' '
+'Building target: test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/ps7_cortexa9_0/lib -o "test.elf"  ./src/lab3.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size test.elf  |tee "test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26224	   1120	  22628	  49972	   c334	test.elf
+'Finished building: test.elf.size'
+' '
+10:08:04 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+10:08:17 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+10:18:22 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+10:24:10 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.

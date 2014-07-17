@@ -1,0 +1,74 @@
+09:49:44.023 INFO  - Processing command line option -hwspec C:/Users/Xilinx/Desktop/xup_test/lab3/lab3.sdk/SDK/SDK_Export/hw/design_1.xml. 
+09:53:48.886 INFO  - FPGA configured successfully with bitstream "C:/Users/Xilinx/Desktop/xup_test/lab3/lab3.sdk/SDK/SDK_Export/hw_platform_0/design_1_wrapper.bit" 
+09:54:17.980 INFO  - Processor reset is completed for ps7_cortexa9_0 
+09:54:18.089 INFO  - PS initialization will be done as it is not done before. 
+09:54:18.089 INFO  - Running PS initialization.... 
+09:54:18.339 INFO  - ps7_init is completed. 
+09:54:18.448 INFO  - ps7_post_config is completed. 
+09:54:18.557 INFO  - PS Initialization is complete. 
+09:54:30.822 INFO  - Processor reset is completed for ps7_cortexa9_0 
+09:55:30.056 INFO  - Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup 
+09:55:30.056 ERROR - Timeout occured while waiting to get reply for command "set_cur_system" 
+09:55:30.291 ERROR - Unexpected error while launching program. java.lang.RuntimeException: No Active System
+
+	at com.xilinx.sdk.targetmanager.internal.TM.setResetOnRun(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+09:59:30.672 ERROR - Port COM3 is already in use. 
+09:59:31.093 INFO  - Processor reset is completed for ps7_cortexa9_0 
+10:00:20.080 INFO  - Processor reset is completed for ps7_cortexa9_0 
+10:01:09.504 INFO  - Processor reset is completed for ps7_cortexa9_0 
+10:07:25.977 INFO  - Processor reset is completed for ps7_cortexa9_0 
+10:07:44.061 INFO  - Processor reset is completed for ps7_cortexa9_0 
+10:07:55.966 INFO  - Processor reset is completed for ps7_cortexa9_0 
+10:08:05.749 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+10:08:07.389 INFO  - Processor reset is completed for ps7_cortexa9_0 
+10:08:24.037 INFO  - Processor reset is completed for ps7_cortexa9_0 
+10:18:26.432 INFO  - Processor reset is completed for ps7_cortexa9_0 
+10:24:18.387 INFO  - Processor reset is completed for ps7_cortexa9_0 
+14:27:10.738 INFO  - Processing command line option -hwspec C:/Users/Xilinx/Desktop/xup_test/lab4/lab4.sdk/SDK/SDK_Export/hw/design_1.xml. 
+14:27:14.591 INFO  - The hardware specification for project 'hw_platform_0' is different from C:/Users/Xilinx/Desktop/xup_test/lab4/lab4.sdk/SDK/SDK_Export/hw/design_1.xml. 
+14:27:15.153 INFO  - Copied contents of C:/Users/Xilinx/Desktop/xup_test/lab4/lab4.sdk/SDK/SDK_Export/hw/design_1.xml into \hw_platform_0\system.xml. 
+14:27:15.356 INFO  - Copied contents of C:\Users\Xilinx\Desktop\xup_test\lab4\lab4.sdk\SDK\SDK_Export\hw\design_1_wrapper.bit into \hw_platform_0\design_1_wrapper.bit. 
+14:27:15.777 INFO  - Copied contents of C:\Users\Xilinx\Desktop\xup_test\lab4\lab4.sdk\SDK\SDK_Export\hw\ps7_init.c into \hw_platform_0\ps7_init.c. 
+14:27:15.793 INFO  - Copied contents of C:\Users\Xilinx\Desktop\xup_test\lab4\lab4.sdk\SDK\SDK_Export\hw\ps7_init.h into \hw_platform_0\ps7_init.h. 
+14:27:16.183 INFO  - Copied contents of C:\Users\Xilinx\Desktop\xup_test\lab4\lab4.sdk\SDK\SDK_Export\hw\ps7_init.html into \hw_platform_0\ps7_init.html. 
+14:27:16.526 INFO  - Copied contents of C:\Users\Xilinx\Desktop\xup_test\lab4\lab4.sdk\SDK\SDK_Export\hw\ps7_summary.html into \hw_platform_0\ps7_summary.html. 
+14:27:16.557 INFO  - Copied contents of C:\Users\Xilinx\Desktop\xup_test\lab4\lab4.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \hw_platform_0\ps7_init.tcl. 
+14:27:16.822 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+14:27:23.125 INFO  - Updating MSS for Board Support Package Project: test_bsp.
+		 The following new driver assignments were made:
+			Peripheral Instance: myip_0, driver: generic_v1_00_a.
+ 
+14:27:23.936 INFO  - Updating hardware inferred compiler options for test. 
+14:27:23.936 INFO  - Clearing existing target manager status. 
+14:27:33.111 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+14:28:21.818 INFO  - FPGA configured successfully with bitstream "C:/Users/Xilinx/Desktop/xup_test/lab4/lab4.sdk/SDK/SDK_Export/hw_platform_0/design_1_wrapper.bit" 
+14:29:18.728 INFO  - Processor reset is completed for ps7_cortexa9_0 
+14:34:39.654 ERROR - Unexpected error while obtaining referenced S/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/test_bsp' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:150)
+	at org.eclipse.core.internal.resources.Project.hasNature(Project.java:584)
+
+14:34:39.654 ERROR - Unexpected error while obtaining referenced S/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/test_bsp' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:150)
+	at org.eclipse.core.internal.resources.Project.hasNature(Project.java:584)
+
+14:40:26.520 INFO  - Saving repository preferences. 
+14:40:26.520 INFO  - Reading in cores from local repositories: 
+		 C:\Users\Xilinx\Desktop\xup_test\led_ip\managed_ip_project\myip_1.0 
+14:40:26.551 INFO  - Updating libgen.options on all BSP projects. 
+14:40:26.567 INFO  - Cleaning BSP projects in the workspace. 
+14:40:43.711 INFO  - Saving repository preferences. 
+14:41:30.496 INFO  - Settings changed on project lab4_bsp. Triggering a rebuild... 
+14:41:31.167 INFO  - Refreshed build settings on project lab4 
+14:48:40.682 INFO  - Processor reset is completed for ps7_cortexa9_0 
+14:49:00.482 INFO  - Processor reset is completed for ps7_cortexa9_0 
+14:50:00.748 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:42:06.456 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:42:31.092 INFO  - Processor reset is completed for ps7_cortexa9_0 
+17:42:49.937 ERROR - Unexpected error while fetching XMD's response:  java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+
+17:42:49.956 ERROR - Zero sized response read from XMD. This indicates a communication error or a programming error. 

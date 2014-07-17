@@ -1,0 +1,491 @@
+
+*** Running vivado
+    with args -log uart_led.rds -m64 -mode batch -messageDb vivado.pb -source uart_led.tcl
+
+
+****** Vivado v2013.4 (64-bit)
+  **** SW Build 353583 on Mon Dec  9 17:49:19 MST 2013
+  **** IP Build 208076 on Mon Dec  2 12:38:17 MST 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+Attempting to get a license: Implementation
+Feature available: Implementation
+Loading parts and site information from C:/Xilinx/Vivado/2013.4/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+source uart_led.tcl
+# set_param gui.test TreeTableDev
+# set_msg_config -id {Common-41} -limit 4294967295
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# set_msg_config -id {Labtools 27-147} -limit 4294967295
+# set_msg_config -id {Synth 8-256} -limit 10000
+# set_msg_config -id {Synth 8-638} -limit 10000
+# create_project -in_memory -part xc7z020clg484-1
+# set_property target_language Verilog [current_project]
+# set_property board em.avnet.com:zynq:zed:d [current_project]
+# set_param project.compositeFile.enableAutoGeneration 0
+# read_verilog {
+#   C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/sources_1/imports/lab1/uart_rx_ctl.v
+#   C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/sources_1/imports/lab1/uart_baud_gen.v
+#   C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/sources_1/imports/lab1/meta_harden.v
+#   C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/sources_1/imports/lab1/uart_rx.v
+#   C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/sources_1/imports/lab1/led_ctl.v
+#   C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/sources_1/imports/lab1/uart_led.v
+# }
+# read_xdc C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_timing.xdc
+# set_property used_in_implementation false [get_files C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_timing.xdc]
+# read_xdc C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc
+# set_property used_in_implementation false [get_files C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc]
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.data/wt [current_project]
+# set_property parent.project_dir C:/Users/Xilinx/Desktop/xup_test/lab1 [current_project]
+# synth_design -top uart_led -part xc7z020clg484-1
+Command: synth_design -top uart_led -part xc7z020clg484-1
+
+Starting synthesis...
+
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:43 . Memory (MB): peak = 232.992 ; gain = 87.398
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'uart_led' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/sources_1/imports/lab1/uart_led.v:25]
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter CLOCK_RATE bound to: 100000000 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'meta_harden' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/sources_1/imports/lab1/meta_harden.v:27]
+INFO: [Synth 8-256] done synthesizing module 'meta_harden' (1#1) [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/sources_1/imports/lab1/meta_harden.v:27]
+INFO: [Synth 8-638] synthesizing module 'uart_rx' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/sources_1/imports/lab1/uart_rx.v:37]
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter CLOCK_RATE bound to: 100000000 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'uart_baud_gen' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/sources_1/imports/lab1/uart_baud_gen.v:35]
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter CLOCK_RATE bound to: 100000000 - type: integer 
+	Parameter OVERSAMPLE_RATE bound to: 1843200 - type: integer 
+	Parameter DIVIDER bound to: 54 - type: integer 
+	Parameter OVERSAMPLE_VALUE bound to: 53 - type: integer 
+	Parameter CNT_WID bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'uart_baud_gen' (2#1) [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/sources_1/imports/lab1/uart_baud_gen.v:35]
+INFO: [Synth 8-638] synthesizing module 'uart_rx_ctl' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/sources_1/imports/lab1/uart_rx_ctl.v:52]
+	Parameter IDLE bound to: 2'b00 
+	Parameter START bound to: 2'b01 
+	Parameter DATA bound to: 2'b10 
+	Parameter STOP bound to: 2'b11 
+INFO: [Synth 8-4512] found unpartitioned construct node [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/sources_1/imports/lab1/uart_rx_ctl.v:109]
+INFO: [Synth 8-256] done synthesizing module 'uart_rx_ctl' (3#1) [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/sources_1/imports/lab1/uart_rx_ctl.v:52]
+INFO: [Synth 8-256] done synthesizing module 'uart_rx' (4#1) [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/sources_1/imports/lab1/uart_rx.v:37]
+INFO: [Synth 8-638] synthesizing module 'led_ctl' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/sources_1/imports/lab1/led_ctl.v:27]
+INFO: [Synth 8-256] done synthesizing module 'led_ctl' (5#1) [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/sources_1/imports/lab1/led_ctl.v:27]
+INFO: [Synth 8-256] done synthesizing module 'uart_led' (6#1) [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/sources_1/imports/lab1/uart_led.v:25]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:45 . Memory (MB): peak = 265.375 ; gain = 119.781
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start RTL Optimization
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+Loading clock regions from C:/Xilinx/Vivado/2013.4/data\parts/xilinx/zynq/zynq/xc7z020/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2013.4/data\parts/xilinx/zynq/zynq/xc7z020/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2013.4/data/parts/xilinx/zynq/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2013.4/data\parts/xilinx/zynq/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2013.4/data\parts/xilinx/zynq/zynq/xc7z020/clg484/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2013.4/data\./parts/xilinx/zynq/IOStandards.xml
+
+Processing XDC Constraints
+Parsing XDC File [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_timing.xdc]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'virtual_clock' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_timing.xdc:6]
+Finished Parsing XDC File [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_timing.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_timing.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.runs/synth_1/.Xil/uart_led_propImpl.xdc].
+Resolution: To avoid this message, exclude constraints listed in [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.runs/synth_1/.Xil/uart_led_propImpl.xdc] from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'A1' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:40]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'A12' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:41]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'A13' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:42]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'A2' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:47]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'A3' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:50]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'A4' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:51]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'A8' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:52]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'AA1' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:53]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'AA2' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:56]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'AA3' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:57]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'B1' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:71]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'B11' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:72]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'B2' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:77]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'B4' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:81]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'B6' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:82]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'C14' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:83]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'C2' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:88]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'C3' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:91]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'C4' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:92]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'C9' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:93]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'D1' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:94]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'D12' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:95]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'D2' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:100]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'D3' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:104]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'D7' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:105]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'E1' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:106]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'E10' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:107]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'E3' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:114]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'E5' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:115]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'F1' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:116]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'F13' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:117]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'F2' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:122]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'F3' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:125]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'F4' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:126]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'F6' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:127]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'F7' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:128]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'G1' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:129]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'G2' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:134]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'G4' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:138]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'G5' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:139]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'G6' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:140]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'G7' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:141]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'H2' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:146]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'H3' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:149]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'H4' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:150]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'H5' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:151]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'J1' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:152]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'J2' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:157]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'J3' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:161]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'J5' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:162]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'J6' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:163]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'J7' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:164]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'K1' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:165]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'K3' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:172]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'K4' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:173]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'K5' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:174]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'K6' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:175]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'L1' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:176]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'L2' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:181]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'L3' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:184]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'L4' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:185]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'L6' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:186]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'L7' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:187]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'M1' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:188]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'M2' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:193]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'M4' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:197]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'M5' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:198]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'M6' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:199]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'M7' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:200]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'N2' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:203]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'N3' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:204]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'N4' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:205]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'N5' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:206]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'N7' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:207]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'P1' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:208]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'P2' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:211]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'P3' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:213]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'P5' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:214]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'P6' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:215]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'R1' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:216]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'R3' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:219]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'R4' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:220]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'R5' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:221]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'T1' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:224]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'T2' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:226]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'T3' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:227]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'U1' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:230]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'U2' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:233]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'V2' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:241]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'V3' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:242]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'W1' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:247]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'W2' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:250]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'W3' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:252]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'Y1' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:256]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'Y3' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:260]
+Finished Parsing XDC File [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.runs/synth_1/.Xil/uart_led_propImpl.xdc].
+Resolution: To avoid this message, exclude constraints listed in [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.runs/synth_1/.Xil/uart_led_propImpl.xdc] from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: 
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+
+---------------------------------------------------------------------------------
+Start RTL Optimization
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:01:01 . Memory (MB): peak = 485.500 ; gain = 339.906
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Finished RTL Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:01:01 . Memory (MB): peak = 485.500 ; gain = 339.906
+---------------------------------------------------------------------------------
+
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:39 ; elapsed = 00:01:17 . Memory (MB): peak = 554.590 ; gain = 408.996
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 3     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 7     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module uart_led 
+Detailed RTL Component Info : 
+Module meta_harden 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module uart_baud_gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module uart_rx_ctl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 7     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module uart_rx 
+Detailed RTL Component Info : 
+Module led_ctl 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (\uart_rx_i0/uart_rx_ctl_i0/frm_err_reg ) is unused and will be removed from module uart_led.
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:01:17 . Memory (MB): peak = 554.672 ; gain = 409.078
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:01:17 . Memory (MB): peak = 585.934 ; gain = 440.340
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:01:17 . Memory (MB): peak = 585.934 ; gain = 440.340
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:01:18 . Memory (MB): peak = 585.934 ; gain = 440.340
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:40 ; elapsed = 00:01:18 . Memory (MB): peak = 585.934 ; gain = 440.340
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+Gated Clock Conversion mode: off
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:01:18 . Memory (MB): peak = 585.934 ; gain = 440.340
+---------------------------------------------------------------------------------
+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:01:18 . Memory (MB): peak = 585.934 ; gain = 440.340
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:01:18 . Memory (MB): peak = 585.934 ; gain = 440.340
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT1 |     1|
+|3     |LUT2 |     2|
+|4     |LUT3 |    13|
+|5     |LUT4 |     7|
+|6     |LUT5 |    14|
+|7     |LUT6 |    19|
+|8     |FDRE |    44|
+|9     |FDSE |     4|
+|10    |IBUF |     4|
+|11    |OBUF |     8|
++------+-----+------+
+
+Report Instance Areas: 
++------+------------------------+--------------+------+
+|      |Instance                |Module        |Cells |
++------+------------------------+--------------+------+
+|1     |top                     |              |   117|
+|2     |  meta_harden_btn_i0    |meta_harden   |     2|
+|3     |  led_ctl_i0            |led_ctl       |    25|
+|4     |  uart_rx_i0            |uart_rx       |    75|
+|5     |    meta_harden_rxd_i0  |meta_harden_1 |     2|
+|6     |    uart_baud_gen_rx_i0 |uart_baud_gen |    14|
+|7     |    uart_rx_ctl_i0      |uart_rx_ctl   |    59|
+|8     |  meta_harden_rst_i0    |meta_harden_0 |     2|
++------+------------------------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:01:18 . Memory (MB): peak = 585.934 ; gain = 440.340
+---------------------------------------------------------------------------------
+
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:01:18 . Memory (MB): peak = 585.934 ; gain = 440.340
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s).
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: 
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+27 Infos, 1 Warnings, 95 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:59 ; elapsed = 00:01:11 . Memory (MB): peak = 974.750 ; gain = 789.680
+# write_checkpoint uart_led.dcp
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+# report_utilization -file uart_led_utilization_synth.rpt -pb uart_led_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.086 . Memory (MB): peak = 974.750 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 10 16:47:54 2014...

@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2013.4 (64-bit)
+# SW Build 353583 on Mon Dec  9 17:49:19 MST 2013
+# IP Build 208076 on Mon Dec  2 12:38:17 MST 2013
+# Start of session at: Thu Jul 10 17:52:12 2014
+# Process ID: 4872
+# Log file: C:/Users/Xilinx/Desktop/xup_test/lab2/lab2.runs/impl_1/uart_led.rdi
+# Journal file: C:/Users/Xilinx/Desktop/xup_test/lab2/lab2.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source uart_led.tcl -notrace

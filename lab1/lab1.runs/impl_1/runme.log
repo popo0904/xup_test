@@ -1,0 +1,258 @@
+
+*** Running vivado
+    with args -log uart_led.rdi -applog -m64 -messageDb vivado.pb -mode batch -source uart_led.tcl -notrace
+
+
+****** Vivado v2013.4 (64-bit)
+  **** SW Build 353583 on Mon Dec  9 17:49:19 MST 2013
+  **** IP Build 208076 on Mon Dec  2 12:38:17 MST 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+Attempting to get a license: Implementation
+Feature available: Implementation
+Loading parts and site information from C:/Xilinx/Vivado/2013.4/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+source uart_led.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2013.4
+Loading clock regions from C:/Xilinx/Vivado/2013.4/data\parts/xilinx/zynq/zynq/xc7z020/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2013.4/data\parts/xilinx/zynq/zynq/xc7z020/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2013.4/data/parts/xilinx/zynq/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2013.4/data\parts/xilinx/zynq/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2013.4/data\parts/xilinx/zynq/zynq/xc7z020/clg484/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2013.4/data\./parts/xilinx/zynq/IOStandards.xml
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+Parsing XDC File [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_timing.xdc]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'virtual_clock' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_timing.xdc:6]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_timing.xdc:18]
+Finished Parsing XDC File [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_timing.xdc]
+Parsing XDC File [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'A1' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:40]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'A12' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:41]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'A13' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:42]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'A2' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:47]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'A3' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:50]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'A4' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:51]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'A8' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:52]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'AA1' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:53]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'AA2' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:56]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'AA3' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:57]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'B1' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:71]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'B11' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:72]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'B2' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:77]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'B4' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:81]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'B6' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:82]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'C14' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:83]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'C2' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:88]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'C3' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:91]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'C4' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:92]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'C9' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:93]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'D1' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:94]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'D12' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:95]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'D2' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:100]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'D3' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:104]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'D7' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:105]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'E1' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:106]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'E10' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:107]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'E3' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:114]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'E5' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:115]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'F1' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:116]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'F13' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:117]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'F2' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:122]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'F3' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:125]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'F4' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:126]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'F6' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:127]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'F7' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:128]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'G1' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:129]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'G2' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:134]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'G4' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:138]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'G5' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:139]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'G6' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:140]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'G7' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:141]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'H2' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:146]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'H3' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:149]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'H4' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:150]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'H5' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:151]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'J1' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:152]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'J2' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:157]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'J3' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:161]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'J5' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:162]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'J6' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:163]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'J7' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:164]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'K1' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:165]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'K3' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:172]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'K4' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:173]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'K5' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:174]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'K6' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:175]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'L1' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:176]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'L2' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:181]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'L3' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:184]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'L4' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:185]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'L6' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:186]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'L7' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:187]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'M1' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:188]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'M2' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:193]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'M4' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:197]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'M5' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:198]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'M6' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:199]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'M7' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:200]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'N2' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:203]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'N3' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:204]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'N4' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:205]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'N5' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:206]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'N7' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:207]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'P1' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:208]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'P2' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:211]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'P3' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:213]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'P5' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:214]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'P6' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:215]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'R1' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:216]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'R3' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:219]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'R4' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:220]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'R5' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:221]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'T1' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:224]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'T2' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:226]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'T3' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:227]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'U1' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:230]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'U2' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:233]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'V2' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:241]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'V3' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:242]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'W1' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:247]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'W2' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:250]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'W3' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:252]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'Y1' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:256]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot set prohibit on package pin site 'Y3' [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc:260]
+Finished Parsing XDC File [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.srcs/constrs_1/imports/lab1/uart_led_pins.xdc]
+Parsing XDC File [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.runs/impl_1/.Xil/Vivado-4572-Xilinx-28/dcp/uart_led.xdc]
+Finished Parsing XDC File [C:/Users/Xilinx/Desktop/xup_test/lab1/lab1.runs/impl_1/.Xil/Vivado-4572-Xilinx-28/dcp/uart_led.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s).
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: 
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+link_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 864.164 ; gain = 679.844
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.087 . Memory (MB): peak = 865.488 ; gain = 1.320
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+
+INFO: [Opt 31-138] Pushed 0 inverter(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1ce633ef6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 866.012 ; gain = 0.523
+
+Phase 2 Constant Propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s).
+INFO: [Opt 31-10] Eliminated 0 cells.
+Phase 2 Constant Propagation | Checksum: 1ce633ef6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 866.012 ; gain = 0.523
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 0 unconnected nets.
+INFO: [Opt 31-11] Eliminated 0 unconnected cells.
+Phase 3 Sweep | Checksum: 1ce633ef6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 866.012 ; gain = 0.523
+Ending Logic Optimization Task | Checksum: 1ce633ef6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 866.012 ; gain = 0.523
+Implement Debug Cores | Checksum: 1ce633ef6
+Logic Optimization | Checksum: 1ce633ef6
+
+Starting Power Optimization Task
+Ending Power Optimization Task | Checksum: 1ce633ef6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 866.012 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+21 Infos, 0 Warnings, 95 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 866.012 ; gain = 1.848
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.183 . Memory (MB): peak = 866.070 ; gain = 0.000
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command place_design
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Core
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 869.383 ; gain = 0.000
+
+Phase 1.1.1 Mandatory Logic Optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 869.383 ; gain = 0.000
+Phase 1.1.1 Mandatory Logic Optimization | Checksum: 10aea609c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 869.383 ; gain = 0.000
+
+Phase 1.1.2 Build Super Logic Region (SLR) Database
+Phase 1.1.2 Build Super Logic Region (SLR) Database | Checksum: 10aea609c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 869.383 ; gain = 0.000
+
+Phase 1.1.3 Add Constraints
+Phase 1.1.3 Add Constraints | Checksum: 10aea609c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 869.383 ; gain = 0.000
+
+Phase 1.1.4 Build Macros
+Phase 1.1.4 Build Macros | Checksum: 10b949c68
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.070 . Memory (MB): peak = 869.383 ; gain = 0.000
+
+Phase 1.1.5 Implementation Feasibility check
+ERROR: [Place 30-25] Component btn_pin_IBUF_inst has been locked to a prohibited site T18.
+ERROR: [Place 30-25] Component led_pins_OBUF[3]_inst has been locked to a prohibited site U21.
+ERROR: [Place 30-25] Component led_pins_OBUF[5]_inst has been locked to a prohibited site W22.
+ERROR: [Place 30-25] Component rxd_pin_IBUF_inst has been locked to a prohibited site Y10.
+Phase 1.1.5 Implementation Feasibility check | Checksum: 10b949c68
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.093 . Memory (MB): peak = 869.383 ; gain = 0.000
+Phase 1.1 Placer Initialization Core | Checksum: 10b949c68
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.094 . Memory (MB): peak = 869.383 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 10b949c68
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.094 . Memory (MB): peak = 869.383 ; gain = 0.000
+ERROR: [Place 30-99] Placer failed with error: 'Implementation Feasibility check failed, Please see the previously displayed individual error or warning messages for more details.'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Placer Task | Checksum: 10b949c68
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.098 . Memory (MB): peak = 869.383 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+30 Infos, 0 Warnings, 95 Critical Warnings and 5 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+
+    while executing
+"place_design "
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 10 16:49:44 2014...

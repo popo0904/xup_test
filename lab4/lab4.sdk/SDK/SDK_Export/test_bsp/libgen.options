@@ -1,0 +1,3 @@
+PROCESSOR=ps7_cortexa9_0
+REPOSITORIES=-lp C:/Users/Xilinx/Desktop/xup_test/led_ip/managed_ip_project/myip_1.0
+HWSPEC=../hw_platform_0/system.xml

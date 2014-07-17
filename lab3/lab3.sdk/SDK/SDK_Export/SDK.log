@@ -1,0 +1,29 @@
+09:49:44.023 INFO  - Processing command line option -hwspec C:/Users/Xilinx/Desktop/xup_test/lab3/lab3.sdk/SDK/SDK_Export/hw/design_1.xml. 
+09:53:48.886 INFO  - FPGA configured successfully with bitstream "C:/Users/Xilinx/Desktop/xup_test/lab3/lab3.sdk/SDK/SDK_Export/hw_platform_0/design_1_wrapper.bit" 
+09:54:17.980 INFO  - Processor reset is completed for ps7_cortexa9_0 
+09:54:18.089 INFO  - PS initialization will be done as it is not done before. 
+09:54:18.089 INFO  - Running PS initialization.... 
+09:54:18.339 INFO  - ps7_init is completed. 
+09:54:18.448 INFO  - ps7_post_config is completed. 
+09:54:18.557 INFO  - PS Initialization is complete. 
+09:54:30.822 INFO  - Processor reset is completed for ps7_cortexa9_0 
+09:55:30.056 INFO  - Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup 
+09:55:30.056 ERROR - Timeout occured while waiting to get reply for command "set_cur_system" 
+09:55:30.291 ERROR - Unexpected error while launching program. java.lang.RuntimeException: No Active System
+
+	at com.xilinx.sdk.targetmanager.internal.TM.setResetOnRun(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+09:59:30.672 ERROR - Port COM3 is already in use. 
+09:59:31.093 INFO  - Processor reset is completed for ps7_cortexa9_0 
+10:00:20.080 INFO  - Processor reset is completed for ps7_cortexa9_0 
+10:01:09.504 INFO  - Processor reset is completed for ps7_cortexa9_0 
+10:07:25.977 INFO  - Processor reset is completed for ps7_cortexa9_0 
+10:07:44.061 INFO  - Processor reset is completed for ps7_cortexa9_0 
+10:07:55.966 INFO  - Processor reset is completed for ps7_cortexa9_0 
+10:08:05.749 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+10:08:07.389 INFO  - Processor reset is completed for ps7_cortexa9_0 
+10:08:24.037 INFO  - Processor reset is completed for ps7_cortexa9_0 
+10:18:26.432 INFO  - Processor reset is completed for ps7_cortexa9_0 
+10:24:18.387 INFO  - Processor reset is completed for ps7_cortexa9_0 

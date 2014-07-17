@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<Compat Version="1" Minor="4">
+	<CompatParts>
+		<KeepCompatible Part="xc7z030fbg484-3"/>
+	</CompatParts>
+	<PortProps>
+	</PortProps>
+</Compat>
+

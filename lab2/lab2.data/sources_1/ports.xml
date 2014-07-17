@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<Interface Version="1" Minor="2">
+	<Ifc Id="ROOT" Top="1">
+		<Bus Id="led_pins">
+			<Port Id="7" Dir="OUT"/>
+			<Port Id="6" Dir="OUT"/>
+			<Port Id="5" Dir="OUT"/>
+			<Port Id="4" Dir="OUT"/>
+			<Port Id="3" Dir="OUT"/>
+			<Port Id="2" Dir="OUT"/>
+			<Port Id="1" Dir="OUT"/>
+			<Port Id="0" Dir="OUT"/>
+		</Bus>
+		<Port Id="clk_pin" Dir="IN"/>
+		<Port Id="rst_pin" Dir="IN"/>
+		<Port Id="btn_pin" Dir="IN"/>
+		<Port Id="rxd_pin" Dir="IN"/>
+	</Ifc>
+</Interface>
+
